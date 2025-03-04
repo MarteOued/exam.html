@@ -1,3 +1,34 @@
+#carousel-section {
+    margin-top: 50px; /* Ajoute une marge pour décoller le carrousel du haut de la page */
+}
+
+#myCarousel {
+    width: 100%; /* Assure que le carrousel occupe toute la largeur */
+}
+
+.carousel-inner img {
+    width: 100%; /* Assure que l'image prend toute la largeur du carrousel */
+    height: 700px; /* Ajuste la hauteur de l'image à 400px, tu peux modifier cette valeur selon ton besoin */
+    object-fit: cover; /* Permet à l'image de couvrir la zone sans déformer ses proportions */
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: black; /* Change la couleur des flèches pour qu'elles soient visibles */
+}
+
+.carousel-control-prev, .carousel-control-next {
+    width: 5%; /* Ajuste la largeur des boutons de navigation */
+}
+
+.carousel-item {
+    text-align: center; /* Centre les images */
+}
+
+.carousel-inner {
+    overflow: hidden; /* Cache tout débordement de l'image hors de la zone du carrousel */
+}
+
+
 /* Style pour la section avec fond noir */
 .black-background {
     background-color: #000;
