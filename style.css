@@ -186,7 +186,7 @@ h2 {
 
 /* Section avec fond noir */
 .six-boxes-section {
-    background-color: black;
+    background-color: #3f3d3d;
     padding: 60px 20px;
     text-align: center;
 }
@@ -262,11 +262,11 @@ h2 {
 }
 
 .feature-box i.fa-youtube {
-    color: #ff0000; /* YouTube - rouge */
+    color: rgb(47, 27, 161); /* YouTube - rouge */
 }
 
 .feature-box i.fa-spotify {
-    color: #1db954; /* Spotify - vert */
+    color: #e5f1e9; /* Spotify - vert */
 }
 
 .feature-box i.fa-facebook {
@@ -320,4 +320,42 @@ h2 {
     padding: 10px;
     border-radius: 50%;
     color: white;
+}
+/* Section spécifique */
+.eight-boxes-section {
+    background-color: #3f3d3d; /* Fond de la section */
+    padding: 40px 20px;
+}
+
+/* Conteneur des boxes */
+.eight-boxes-section .box-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 colonnes */
+    gap: 20px; /* Espace entre les boxes */
+    justify-items: center; /* Centrer les boxes */
+}
+
+/* Styles des boxes */
+.eight-boxes-section .feature-box {
+    background-color: hsl(0, 0%, 0%); /* Fond des carrés */
+    border: 1px solid hsl(0, 0%, 5%); /* Bordure autour des carrés */
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    width: 100%; /* Prendre toute la largeur disponible */
+    box-sizing: border-box; /* Inclure le padding et la bordure dans la largeur totale */
+}
+
+/* Styles pour les titres */
+.eight-boxes-section .feature-box h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: hsl(0, 0%, 99%); /* Couleur du titre */
+}
+
+/* Styles pour les descriptions */
+.eight-boxes-section .feature-box p {
+    font-size: 14px;
+    color: hsla(0, 33%, 99%, 0.943); /* Couleur du texte */
 }
