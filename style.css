@@ -178,3 +178,146 @@
     font-size: 18px; /* Plus grand */
     color: hsl(0, 57%, 95%);
 }
+h2 {
+    font-size: 50px; /* Taille agrandie du texte */
+    color: white;    /* Assurez-vous que la couleur du texte reste visible */
+    margin-bottom: 200px; /* Espacement en bas du titre */
+}
+
+/* Section avec fond noir */
+.six-boxes-section {
+    background-color: black;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* Titre de la section */
+.section-title h2 {
+    color: white;
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+/* Conteneur des boîtes */
+.box-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Deux colonnes */
+    gap: 30px; /* Espacement entre les carrés */
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Style des carrés */
+.feature-box {
+    background: #1a1a1a; /* Gris foncé */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 6px 10px rgba(255, 255, 255, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Effet hover */
+.feature-box:hover {
+    transform: translateY(-8px);
+}
+
+/* Icônes des applications */
+.feature-box i {
+    font-size: 50px; /* Taille des icônes */
+    margin-bottom: 15px;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Colorier les icônes selon leur type */
+.feature-box i.fa-netflix {
+    color: #e50914; /* Netflix - rouge */
+}
+
+.feature-box i.fa-syfy {
+    color: #00c6ff; /* Syfy - bleu */
+}
+
+.feature-box i.fa-hbo {
+    color: #00a1e4; /* HBO - bleu clair */
+}
+
+.feature-box i.fa-fox {
+    color: #fcbf49; /* Fox - jaune */
+}
+
+.feature-box i.fa-apple {
+    color: #a2aaad; /* Apple - gris */
+}
+
+.feature-box i.fa-google-play {
+    color: #3cba54; /* Google Play - vert */
+}
+
+.feature-box i.fa-amazon {
+    color: #ff9900; /* Amazon - orange */
+}
+
+.feature-box i.fa-youtube {
+    color: #ff0000; /* YouTube - rouge */
+}
+
+.feature-box i.fa-spotify {
+    color: #1db954; /* Spotify - vert */
+}
+
+.feature-box i.fa-facebook {
+    color: #3b5998; /* Facebook - bleu */
+}
+
+.feature-box i.fa-twitter {
+    color: #1da1f2; /* Twitter - bleu clair */
+}
+
+.feature-box i.fa-instagram {
+    color: #e1306c; /* Instagram - rose */
+}
+
+/* Titres */
+.feature-box h3 {
+    font-size: 22px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+/* Texte */
+.feature-box p {
+    font-size: 16px;
+    color: #dcdcdc;
+    margin-bottom: 20px;
+}
+
+/* Conteneur des icônes */
+.icons-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Quatre icônes par ligne */
+    gap: 10px;
+    justify-items: center;
+}
+
+/* Icônes dans les conteneurs des carrés */
+.icons-container i {
+    font-size: 30px; /* Taille des icônes */
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Effet au survol des icônes */
+.icons-container i:hover {
+    transform: scale(1.1); /* Agrandir l'icône au survol */
+}
+
+/* Ajout d'un fond coloré pour les icônes (optionnel) */
+.icons-container i {
+    background-color: #333;
+    padding: 10px;
+    border-radius: 50%;
+    color: white;
+}
