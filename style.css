@@ -127,3 +127,54 @@
     font-size: 18px; /* Texte plus grand */
     color: #555;
 }
+/* Section avec fond gris */
+.four-boxes-section {
+    background-color: #080808;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* Conteneur principal en grille */
+.box-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Deux colonnes */
+    gap: 30px; /* Espacement plus grand entre les carrés */
+    max-width: 1100px; /* Plus large */
+    margin: 0 auto;
+}
+
+/* Style des carrés */
+.feature-box {
+    background: rgb(133, 124, 124);
+    padding: 40px; /* Plus grand */
+    border-radius: 15px;
+    box-shadow: 0px 6px 10px #cec9c926; /* Ombre plus marquée */
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    width: 100%; /* Prend bien la largeur de la grille */
+}
+
+/* Effet au survol */
+.feature-box:hover {
+    transform: translateY(-8px);
+}
+
+/* Icônes */
+.feature-box i {
+    font-size: 60px; /* Plus grand */
+    color: #ff6600;
+    margin-bottom: 20px;
+}
+
+/* Titres */
+.feature-box h3 {
+    font-size: 26px; /* Plus grand */
+    color: hsl(0, 60%, 97%);
+    margin-bottom: 15px;
+}
+
+/* Texte */
+.feature-box p {
+    font-size: 18px; /* Plus grand */
+    color: hsl(0, 57%, 95%);
+}
