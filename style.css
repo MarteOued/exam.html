@@ -1,0 +1,49 @@
+/* Style pour la section avec fond noir */
+.black-background {
+    background-color: #000;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Style pour le texte à gauche */
+.text-content {
+    flex: 1;
+    color: white;
+}
+
+/* Style pour le conteneur d'image */
+.image-container {
+    position: relative; /* Nécessaire pour positionner le carré orange par-dessus l'image */
+    max-width: 50%; /* Ajustez la taille de l'image à votre convenance */
+}
+
+.image-container img {
+    width: 100%; /* L'image s'ajuste à la taille du conteneur */
+    border-radius: 10px;
+}
+
+/* Style pour le carré orange agrandi et partiellement dans la section texte */
+/* Style pour le carré orange agrandi et partiellement dans la section texte */
+.price-tag {
+position: absolute;
+left: -20px; /* Déplace le carré vers la gauche, une partie dans la section texte */
+bottom: 30px; /* Augmente la valeur pour le monter un peu plus haut */
+background-color: orange;
+padding: 20px;
+border-radius: 5px;
+color: white;
+text-align: center;
+font-weight: bold;
+width: 200px; /* Agrandit la taille du carré */
+height: 100px; /* Agrandit la hauteur du carré */
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.price-tag p {
+margin: 0;
+font-size: 18px; /* Ajuste la taille du texte à l'intérieur */
+}
