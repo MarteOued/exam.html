@@ -11,39 +11,119 @@
 .text-content {
     flex: 1;
     color: white;
+    font-size: 20px; /* Augmenter la taille de la police pour le texte */
+    line-height: 1.6; /* Améliorer l'espacement entre les lignes */
+    padding-right: 20px; /* Espacement entre le texte et l'image */
 }
 
 /* Style pour le conteneur d'image */
 .image-container {
-    position: relative; /* Nécessaire pour positionner le carré orange par-dessus l'image */
-    max-width: 50%; /* Ajustez la taille de l'image à votre convenance */
+    position: relative;
+    max-width: 50%;
 }
 
+/* Style pour l'image */
 .image-container img {
     width: 100%; /* L'image s'ajuste à la taille du conteneur */
     border-radius: 10px;
 }
 
 /* Style pour le carré orange agrandi et partiellement dans la section texte */
-/* Style pour le carré orange agrandi et partiellement dans la section texte */
 .price-tag {
-position: absolute;
-left: -20px; /* Déplace le carré vers la gauche, une partie dans la section texte */
-bottom: 30px; /* Augmente la valeur pour le monter un peu plus haut */
-background-color: orange;
-padding: 20px;
-border-radius: 5px;
-color: white;
-text-align: center;
-font-weight: bold;
-width: 200px; /* Agrandit la taille du carré */
-height: 100px; /* Agrandit la hauteur du carré */
-display: flex;
-justify-content: center;
-align-items: center;
+    position: absolute;
+    left: -20px; /* Déplace le carré vers la gauche, une partie dans la section texte */
+    bottom: 30px; /* Positionne le carré un peu plus haut */
+    background-color: orange;
+    padding: 20px;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    width: 220px; /* Agrandit la taille du carré */
+    height: 120px; /* Agrandit la hauteur du carré */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .price-tag p {
-margin: 0;
-font-size: 18px; /* Ajuste la taille du texte à l'intérieur */
+    margin: 0;
+    font-size: 20px; /* Agrandit la taille du texte à l'intérieur du carré */
+}
+
+/* Ajout d'un espacement pour centrer un peu plus le texte */
+.text-content p, .text-content h2 {
+    text-align: center; /* Centre le texte dans la section */
+}
+
+/* Fond gris */
+.gray-background {
+    background-color: #414040f4;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/* Conteneur principal */
+.content-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Sous-titre */
+.section-subtitle {
+    font-size: 16px;
+    color: hsl(40, 12%, 95%);
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Titre principal */
+.section-title {
+    font-size: 32px;
+    color: hsl(0, 28%, 95%);
+    margin-bottom: 25px;
+}
+
+/* Conteneur des fonctionnalités */
+/* Conteneur des fonctionnalités */
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: nowrap; /* Empêche le passage à la ligne */
+}
+
+/* Agrandissement des boîtes */
+.feature-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(8, 8, 8);
+    padding: 30px; /* Plus d'espace */
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 32%; /* Plus large mais garde les 3 sur une ligne */
+    min-width: 280px;
+    text-align: center;
+}
+
+/* Icônes */
+.feature-box i {
+    font-size: 50px; /* Agrandit les icônes */
+    color: #ff6600;
+    margin-bottom: 15px;
+}
+
+/* Titres des fonctionnalités */
+.feature-box h3 {
+    font-size: 22px; /* Plus grand */
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Texte des fonctionnalités */
+.feature-box p {
+    font-size: 18px; /* Texte plus grand */
+    color: #555;
 }
